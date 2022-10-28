@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Concert One';
+}
+
+
+.navbar{
+    height: 60px;
+}
+
+.nav-brand{
+    color: #40B9B9;
+}
+.nav-container ul li a{
+    text-decoration: none;
+    color: #685044;
+}
+.nav-container ul li a:hover{
+    color: #45210F;
+}
+
+/*carrousel */
+.carrousel{
+    z-index: -1;
+    width: 100%;
+    height: 115vh;
+    overflow: hidden;
+    background: linear-gradient(113.12deg, #F4D8C1 2.27%, #BF8657 95.48%);
+
+}
+.container-img{
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.store{
+    width: 100%;
+    height: 3000px;
+}
+.store>.header-store{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.store>.header-store>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Concert One';
+    color: #FFC700;
+    font-size: 30px;
+    height: 100px;
+    width: 300px;
+    background-image: url(/assets/brush.png);
+    background-size: cover;
+}
+.store-img{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+}
+.store-img-container{
+    width: 1080px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    grid-template-rows: repeat(2,230px);
+    gap: 20px;
+
+}
+.store-item{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.store-item:hover{
+    background: rgba(232, 232, 232, 0.46);
+    /* border-radius: 10px; */
+    border: 1px solid rgb(168, 168, 168);
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); */
+}
+.store-img-container>div>img{
+    width: 200px;
+    height: 180px;
+}
+.store-img-container>div>.store-text{
+    font-family: 'Concert One';
+    padding-top: 5px;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 15px;
+    text-align: center;
+    color: #33B6FF;
+}
+.footer {
+    background-color: #3A405A;
+    min-height: 128px;
+}
