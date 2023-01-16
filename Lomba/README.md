@@ -1,2 +1,0 @@
-# LombaBytesFest
-Repo lomba bytesfest 
