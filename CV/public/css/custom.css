@@ -54,6 +54,42 @@
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
-@media screen and (min-width:640px;){
-    height: 100px;
+@media screen and (min-width:1024px){
+    .cus_kontainer{
+        height: 660px;
+    }
+    .cus_kepala{
+        width: 500px;
+        height: 100%;
+    }
+    .cus_nama{ 
+        font-size: 24pt;
+        font-family: 'Montserrat', sans-serif;
+        align-self: center;
+    }
+    .cus_info{
+        font-size: 7.2pt;
+        font-family: 'Poppins', sans-serif;
+    }
+    .cus_isi{
+        width: 90%;
+        height: 100%;
+        border-left-width: 2px;
+        border-left-color: #1a4380;
+        border-bottom-width: 0;
+        border-top-width: 0;
+    }
+    .cus_judul_isi{
+        font-size: 20pt;
+        text-align: left;
+    }
+    .cus_subjudul_isi{
+        font-size: 10pt;
+        font-weigth: 900px;
+        text-align: left;
+    }
+    .cus_konten_isi{
+        font-size: 10pt;
+        text-align: left;
+    }
 }
