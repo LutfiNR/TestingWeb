@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-stroke-white {
+    -webkit-text-stroke: 1px white;
+}
+.text-stroke-blue{
+    -webkit-text-stroke: 1px #3AB4F2;
+}
+.my-rotate-y-180 {
+    transform: rotateY(180deg);
+}
+.preserve-3d {
+    transform-style: preserve-3d;
+}
+.perspective {
+    perspective: 1000px;
+}
+.backface-hidden {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.text-stroke{
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+}
