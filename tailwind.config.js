@@ -22,8 +22,14 @@ module.exports = {
         '0078AA' : "#0078AA",
         '3AB4F2' : "#3AB4F2"
       },
-      transitionProperty : {
-        'width' : "100%"
+      animation : {
+        'slide' : "slide 0.7s ease-in-out",
+      },
+      keyframes : {
+        'slide' : {
+          'from' : { width: '0' },
+          'to' : {width: '50%'}
+        }
       }
     },
   },
