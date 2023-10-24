@@ -1,4 +1,24 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require("tailwindcss/plugin");
+
+const Myclass = plugin(function ({ addUtilities }) {
+  addUtilities({
+    ".my-rotate-y-180": {
+      transform: "rotateY(180deg)",
+    },
+    ".preserve-3d": {
+      transformStyle: "preserve-3d",
+    },
+    ".perspective": {
+      perspective: "1000px",
+    },
+    ".backface-hidden": {
+      backfaceVisibility: "hidden",
+    },
+  });
+});
+
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
@@ -23,16 +43,25 @@ module.exports = {
         '3AB4F2' : "#3AB4F2"
       },
       animation : {
-        'slide' : "slide 0.7s ease-in-out",
+        'load' : "load 0.7s ease-in-out",
+        'slideup' : "slideup 1s ease-in-out",
+        'slidedown' : "slidedown 1s ease-in-out"
       },
       keyframes : {
-        'slide' : {
-          'from' : { width: '0' },
-          'to' : {width: '50%'}
+        'load' : {
+          'from' : { width: '0' }
+        },
+        'slideup' : {
+          '0%' : {transform: "translateY(50px)"},
+          '100%' : {transform: "translateY(0)"}
+        },
+        'slidedown' : {
+          '0%' : {transform: "translateY(-50px)"},
+          '100%' : {transform: "translateY(0)"}
         }
       }
     },
   },
-  plugins: [],
+  plugins: [Myclass],
 }
 

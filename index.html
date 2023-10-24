@@ -43,16 +43,20 @@
 
         <section class="bg-intro bg-fixed bg-cover bg-no-repeat w-full h-screen absolute"></section>
         <!-- home -->
-        <section class="w-full h-screen flex flex-col justify-center items-center text-white gap-4">
+        <section class="w-full h-screen flex flex-col justify-center items-center text-white gap-1">
             <!-- headline -->
-            <span class="text-6xl leading-none font-extrabold z-10 ">FITE</span>
-            <div class="h-1 w-1/2 bg-white z-10 animate-slide"></div>
-            <span class=" font-extrabold tracking-widest text-transparent text-stroke-white
-                text-center w-min text-2xl z-10">
-                FOOTBALL ACADEMY</span><br><br>
+            <div class="z-10 overflow-hidden block">
+                <div class="h-fit text-6xl leading-none font-extrabold transition delay-100 animate-slideup">FITE</div>
+            </div>
+            <div class="h-1 w-4/5 bg-white z-10 animate-load"></div>
+            <div class="z-10 overflow-hidden block">
+                <div class="font-extrabold tracking-widest text-transparent text-stroke-white
+                text-center text-2xl animate-slidedown">
+                FOOTBALL ACADEMY</div><br><br>
+            </div>
             <!-- button -->
-            <button class="px-6 py-2 bg-0078AA text-2xl font-bold z-10 animate-bounce drop-shadow-md-white"><a
-                    href="./program.html">JOIN US!</a></button>
+            <!-- <button class="px-6 py-2 bg-0078AA text-2xl font-bold z-10 animate-bounce drop-shadow-md-white"><a
+                    href="./program.html">JOIN US!</a></button> -->
         </section>
 
         <!-- about us -->
@@ -122,7 +126,7 @@
             </svg>
         </div>
         <idv class="absolute -translate-y-20 right-0">
-            <svg  width="55" height="200" viewBox="0 0 110 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="55" height="200" viewBox="0 0 110 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="210" cy="30" r="200" stroke="#0078AA" stroke-width="9" />
                 <circle cx="210" cy="30" r="175" stroke="#0078AA" stroke-width="9" />
                 <circle cx="210" cy="30" r="150" stroke="#0078AA" stroke-width="9" />
@@ -133,44 +137,61 @@
         <!-- trophy -->
         <section class="px-6 py-12 w-full h-fit text-center">
             <span class="text-4xl font-extrabold drop-shadow-sm-lightblue text-0078AA">TROPHY</span>
-            <div class="relative pt-12 drop-shadow-md">
-                <div class="bg-0078AA p-5 text-white flex flex-col">
-                    <div
-                        class="py-4 rounded-full bg-F2DF3A w-12 h-12 flex justify-center items-center text-3xl font-bold">
-                        5</div>
-                    <img class="py-4 self-center" src="./assets/image 7.png" alt="">
-                    <span class="pt-4 text-4xl font-bold">ACADEMY SUPER CUP</span>
-                </div>
-            </div>
-            <div class="relative pt-4 drop-shadow-md">
+            
+            <div class="relative mt-12 drop-shadow-md overflow-hidden block group ">
                 <div class="bg-0078AA p-5 text-white flex flex-col">
                     <div
                         class="py-4 rounded-full bg-F2DF3A w-12 h-12 flex justify-center items-center text-3xl font-bold">
                         3</div>
-                    <img class="py-4 self-center" src="./assets/image 6.png" alt="">
-                    <span class="pt-4 text-4xl font-bold">ACADEMY CHAMPIONS</span>
+                        <img class="py-4 self-center" src="./assets/trophy-ac.png" alt="">
+                        <span class="pt-4 text-4xl font-bold">ACADEMY CHAMPIONS</span>
+                    </div>
+                <div class="h-full justify-center font-bold flex flex-col gap-3 text-white text-2xl absolute group-hover:-translate-y-full group-active:-translate-y-full transition-all ease-in-out duration-150 bg-gradient-to-t from-black w-full">
+                    <div>2018</div>
+                    <div>2020</div>
+                    <div>2023</div>
                 </div>
             </div>
-            <div class="relative pt-4 drop-shadow-md">
+
+            <div class="relative mt-12 drop-shadow-md overflow-hidden block group ">
+                <div class="bg-0078AA p-5 text-white flex flex-col">
+                    <div
+                        class="py-4 rounded-full bg-F2DF3A w-12 h-12 flex justify-center items-center text-3xl font-bold">
+                        5</div>
+                    <img class="py-4 self-center" src="./assets/trophy-asc.png" alt="">
+                    <span class="pt-4 text-4xl font-bold">ACADEMY SUPER CUP</span>
+                </div>
+                <div class="h-full justify-center font-bold flex flex-col gap-3 text-white text-2xl absolute group-hover:-translate-y-full group-active:-translate-y-full transition-all ease-in-out duration-150 bg-gradient-to-t from-black w-full">
+                    <div>2009</div>
+                    <div>2013</div>
+                    <div>2018</div>
+                    <div>2020</div>
+                    <div>2023</div>
+                </div>
+            </div>
+
+
+            <div class="relative mt-12 drop-shadow-md overflow-hidden block group ">
                 <div class="bg-0078AA p-5 text-white flex flex-col">
                     <div
                         class="py-4 rounded-full bg-F2DF3A w-12 h-12 flex justify-center items-center text-3xl font-bold">
                         9</div>
-                    <img class="py-4 self-center" src="./assets/image 8.png" alt="">
+                    <img class="py-4 self-center" src="./assets/trophy-loa.png" alt="">
                     <span class="pt-4 text-4xl font-bold">LEAUGE OF ACADEMY</span>
                 </div>
-                <div class="absolute bottom-0 hidden">
-                    <span>2009</span>
-                    <span>2010</span>
-                    <span>2011</span>
-                    <span>2012</span>
-                    <span>2013</span>
-                    <span>2015</span>
-                    <span>2018</span>
-                    <span>2020</span>
-                    <span>2023</span>
+                <div class="h-full justify-center font-bold flex flex-col gap-3 text-white text-2xl absolute group-hover:-translate-y-full group-active:-translate-y-full transition-all ease-in-out duration-150 bg-gradient-to-t from-black w-full">
+                    <div>2009</div>
+                    <div>2010</div>
+                    <div>2012</div>
+                    <div>2013</div>
+                    <div>2009</div>
+                    <div>2018</div>
+                    <div>2020</div>
+                    <div>2021</div>
+                    <div>2023</div>
                 </div>
             </div>
+            
         </section>
 
         <!-- program -->
@@ -207,25 +228,24 @@
             <div class="w-full h-fit flex">
                 <div class="mt-4 basis-1/2 py-4">
                     <div class="relative w-full text-center h-9 group mt-8">
-                        <span class="relative text-3xl font-bold text-0078AA z-10">RONALDO</span>
+                        <span class="relative text-3xl font-bold text-0078AA z-10">ODADOO</span>
                         <span
-                            class="absolute w-full left-0 text-3xl font-bold text-stroke text-transparent">RONALDO</span>
+                            class="absolute w-full left-0 text-3xl font-bold text-stroke text-transparent">ODADOO</span>
                         <div
                             class="top-0 left-0 absolute w-3 h-full group-hover:w-full group-active:w-full transition-all ease-in-out duration-500 bg-white">
                         </div>
                     </div>
                     <div class="relative w-full h-9 text-center group mt-8">
-                        <span class="relative text-3xl font-bold text-0078AA z-10">MAGUIRE</span>
+                        <span class="relative text-3xl font-bold text-0078AA z-10">TESSIE</span>
                         <span
-                            class="absolute w-full left-0 text-3xl font-bold text-stroke text-transparent">MAGUIRE</span>
+                            class="absolute w-full left-0 text-3xl font-bold text-stroke text-transparent">TESSIE</span>
                         <div
                             class="top-0 left-0 absolute w-3 h-full group-hover:w-full group-active:w-full transition-all ease-in-out duration-500 bg-white">
                         </div>
                     </div>
                     <div class="relative w-full h-9 text-center group mt-8">
-                        <span class="relative text-3xl font-bold text-0078AA z-10">DE GEA</span>
-                        <span class="absolute w-full left-0 text-3xl font-bold text-stroke text-transparent">DE
-                            GEA</span>
+                        <span class="relative text-3xl font-bold text-0078AA z-10">OMAMA</span>
+                        <span class="absolute w-full left-0 text-3xl font-bold text-stroke text-transparent">OMAMA</span>
                         <div
                             class="top-0 left-0 absolute w-3 h-full group-hover:w-full group-active:w-full transition-all ease-in-out duration-500 bg-white">
                         </div>
@@ -237,19 +257,24 @@
                 </div>
                 <div class="basis-1/2 flex justify-end items-end">
                     <div>
-                        <img class="w-40" src="/assets/image 6.png" alt="">
-                        <img class="w-40 hidden" src="/assets/image 6.png" alt="">
-                        <img class="w-40 hidden" src="/assets/image 6.png" alt="">
-                        <img class="w-40 hidden" src="/assets/image 6.png" alt="">
+                        <img class="w-40" src="./assets/ODADO.png" alt="">
+                        <img class="w-40 hidden" src="./assets/TESSIE.png" alt="">
+                        <img class="w-40 hidden" src="./assets/OMAMA.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
         <footer class="w-full h-fit bg-black flex flex-col items-center p-8 text-white">
-            <div class="w-12 h-12">
-                <img src="./assets/logo.svg" alt="">
-            </div>
+            <a class="h-12 w-12" href="#index.html">
+                <svg width="48" height="48" viewBox="0 0 107 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="57.9131" y="0.714264" width="48.3466" height="22.1773" fill="white" />
+                    <rect x="0.252075" y="0.714279" width="22.1773" height="22.1773" fill="white" />
+                    <rect x="57.9131" y="41.5206" width="35.0402" height="22.1773" fill="white" />
+                    <rect x="57.9131" y="82.3269" width="48.3466" height="22.1773" fill="white" />
+                    <rect x="29.0826" y="0.714264" width="22.1773" height="103.79" fill="white" />
+                </svg>
+            </a>
             <div class="mt-3">
                 <span class="text-xl font-bold">FITE FOOTBALL ACADEMY</span>
             </div>
