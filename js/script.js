@@ -4,7 +4,17 @@ const aboutUsContent = document.getElementById("aboutus-content");
 const decorAboutUsTop = document.getElementById("decor-aboutus-top");
 const decorAboutUsLeft = document.getElementById("decor-aboutus-left");
 const historyContent = document.getElementById("history-content");
-let imgPlayer = document.querySelectorAll("#img-top-player>*");
+const imgPlayer = document.querySelectorAll("#img-top-player>*");
+const menu = document.getElementById("menu");
+
+function openMenu() {
+    menu.classList.add("flex","h-screen");
+    menu.classList.remove("hidden","h-0");
+}
+function closeMenu() {
+    menu.classList.remove("flex","h-screen");
+    menu.classList.add("hidden","h-0");
+}
 
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();
