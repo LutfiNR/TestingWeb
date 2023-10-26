@@ -8,18 +8,16 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body class="font-montserrat uk-link-reset">
     <!-- container -->
     <div class="bg-gray-50">
-
         <!-- navbar -->
         <nav class="
-        fixed w-full px-6 py-6 flex justify-between items-center bg-gradient-to-b from-gray-800  z-20
+        fixed w-full px-6 py-6 flex justify-between items-center bg-gradient-to-b from-gray-800 z-20
+        md:px-12 md:py-10
         ">
             <!-- logo -->
             <a class="h-7 w-7" href="#index.html">
@@ -45,118 +43,119 @@
         <section class="w-full h-screen flex flex-col justify-center items-center text-white gap-1">
             <!-- headline -->
             <div id="fite-headline" class="z-10 overflow-hidden block">
-                <div class="h-fit text-6xl leading-none font-extrabold animate__animated animate__slideInUp">FITE</div>
+                <div class="h-fit text-6xl leading-none font-extrabold animate__animated animate__slideInUp md:text-8xl">FITE</div>
             </div>
             <div class="h-1 w-4/5 bg-white z-10 animate__animated animate__zoomIn"></div>
             <div id="fa-headline" class="z-10 overflow-hidden block">
-                <div class="font-extrabold tracking-widest text-transparent text-stroke-white
-                text-center text-2xl animate__animated animate__slideInDown">
-                    FOOTBALL ACADEMY</div><br><br>
+                <div class="font-extrabold tracking-widest text-transparent text-stroke-white text-center text-2xl animate__animated animate__slideInDown md:text-5xl">FOOTBALL ACADEMY</div><br><br>
             </div>
         </section>
 
         <!-- about us -->
-        <section class="w-full h-screen bg-0078AA flex flex-col items-center text-white">
+        <section class=" w-full h-fit lg:h-screen bg-0078AA flex flex-col lg:flex-row items-center text-white">
             <!-- decoration -->
-            <div class="w-48 overflow-hidden">
-                <img id="decor-aboutus" src="./assets/aboutus-top.png" alt="">
+            <div class="w-48 overflow-hidden lg:hidden">
+                <img id="decor-aboutus-top" class="" src="./assets/aboutus-top.png" alt="">
+            </div>
+            <div class="basis-1/6 overflow-hidden hidden lg:block">
+                <img id="decor-aboutus-left" class="w-full" src="./assets/aboutus-left.png" alt="">
             </div>
             <!-- container -->
-            <div id="aboutus-content" class="relative px-6 py-12 text-center">
+            <div id="aboutus-content" class="lg:basis-5/6 relative px-6 lg:px-20 py-12 text-center lg:text-left group md:px-12">
                 <!-- headline -->
-                <span class="text-4xl font-extrabold drop-shadow-sm-lightblue">ABOUT US</span>
+                <span class="text-4xl font-extrabold drop-shadow-sm-lightblue md:text-6xl lg:text-7xl">ABOUT US</span>
                 <!-- content -->
-                <p class="pt-6 text-justify text-xl indent-8"><b>FITE Football Academy</b>,
-                    Committed to nurturing young football talent since 2008, <b>FITE Football Academy</b> creates an
-                    environment that fosters player development. We provide top-tier coaching, customized training, and
-                    emphasize character growth. Join our community to start your football journey, whether you're a
-                    beginner or experienced player.
+                <p class="pt-6 text-justify text-xl indent-8 lg:indent-0 md:text-2xl lg:text-3xl"><b>FITE Football Academy</b>,
+                    we're dedicated to nurturing young football talent. Established in 2008, our vision is to create an
+                    environment that supports player development in football. We offer high-quality coaching, tailored
+                    training programs, and a commitment to character development. Our coaching staff is experienced,
+                    dedicated, and passionate about helping players reach their full potential.
+                    Join us to be part of a community where passion for football meets skill development. Whether you're
+                    a beginner or an experienced player, <b>FITE Football Academy</b> is the place where your football
+                    journey begins.
                 </p>
             </div>
         </section>
 
         <!-- our history -->
-        <section class="px-6 py-12 w-full h-fit text-center">
-            <span class="text-4xl font-extrabold drop-shadow-sm-lightblue text-0078AA">OUR HISTORY</span>
-            <div class="flex gap-5 pt-12">
+        <section class="px-6 py-12 w-full h-fit text-center md:px-12 lg:mt-8">
+            <span class="text-4xl font-extrabold drop-shadow-sm-lightblue text-0078AA md:text-6xl">OUR HISTORY</span>
+            <div class="flex gap-4 pt-12 md:gap-6">
                 <!-- indicator -->
                 <div class="w-8 bg-0078AA"></div>
                 <!-- container -->
-                <div class="flex-wrap">
+                <div id="history-content" class="overflow-hidden">
                     <!-- content -->
-                    <img src="./assets/history-2008.jpg" alt="">
-                    <div class="text-justify">
-                        <span class="text-0078AA text-3xl font-bold">2008</span>
-                        <p class="pt-2 text-md">
-                            Founded in 2008 by 3 young people who had the same goal to create a forum for developing
-                            talent in the field of football.</p>
+                    <div class="lg:flex">
+                        <img class="lg:w-1/3" src="./assets/history-2008.jpg" alt="">
+                        <div class="text-justify pt-2 lg:px-8">
+                            <span class=" text-0078AA text-3xl font-bold md:text-5xl">2008</span>
+                            <p class="pt-3 text-md md:text-2xl">
+                                Founded in 2008 by 3 young people who had the same goal to create a forum for developing
+                                talent in the field of football.</p>
+                        </div>
                     </div><br><br>
-                    <img src="./assets/history-2012.jpg" alt="">
-                    <div class="text-justify">
-                        <span class="text-0078AA text-3xl font-bold">2012</span>
-                        <p class="pt-2 text-md">
-                            Winning the National Youth Championship in 2012 and producing over 20 players who have
-                            successfully reached the professional level in football.
+                    <div class="lg:flex">
+                        <img class="lg:w-1/3" src="./assets/history-2012.jpg" alt="">
+                        <div class="text-justify pt-2 lg:px-8">
+                            <span class="text-0078AA text-3xl font-bold md:text-5xl">2012</span>
+                            <p class="pt-3 text-md md:text-2xl">
+                                Winning the National Youth Championship in 2012 and producing over 20 players who have
+                                successfully reached the professional level in football.
+                        </div>
                     </div><br><br>
-                    <img src="./assets/history-2013.jpg" alt="">
-                    <div class="text-justify ">
-                        <span class="text-0078AA text-3xl font-bold">2013</span>
-                        <p class="pt-2 text-md">
-                            Over the years, FA FITE has seen substantial growth. In 2013, we've expanded with establish
-                            a new branch in Konoha.
+                    <div class="lg:flex">
+                        <img class=" lg:w-1/3" src="./assets/history-2013.jpg" alt="">
+                        <div class="text-justify pt-2 lg:px-8">
+                            <span class="text-0078AA text-3xl font-bold md:text-5xl">2013</span>
+                            <p class="pt-3 text-md md:text-2xl">
+                                Over the years, FA FITE has seen substantial growth. In 2013, we've expanded with
+                                establish
+                                a new branch in Konoha.
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- decoration -->
-        <div class="absolute">
-            <svg width="55" height="200" viewBox="0 0 110 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="-100" cy="30" r="200" stroke="#0078AA" stroke-width="9" />
-                <circle cx="-100" cy="30" r="175" stroke="#0078AA" stroke-width="9" />
-                <circle cx="-100" cy="30" r="150" stroke="#0078AA" stroke-width="9" />
-                <circle cx="-100" cy="30" r="125" stroke="#0078AA" stroke-width="9" />
-            </svg>
+        <div class="absolute w-16 md:w-24 ">
+            <img src="./assets/cirecle-1.png" alt="">
         </div>
-        <idv class="absolute -translate-y-20 right-0">
-            <svg width="55" height="200" viewBox="0 0 110 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="210" cy="30" r="200" stroke="#0078AA" stroke-width="9" />
-                <circle cx="210" cy="30" r="175" stroke="#0078AA" stroke-width="9" />
-                <circle cx="210" cy="30" r="150" stroke="#0078AA" stroke-width="9" />
-                <circle cx="210" cy="30" r="125" stroke="#0078AA" stroke-width="9" />
-            </svg>
+        <idv class="absolute w-16 -translate-y-20 right-0 rotate-180 md:w-24">
+            <img src="./assets/cirecle-1.png" alt="">
         </idv>
 
         <!-- trophy -->
-        <section class="px-6 py-12 w-full h-fit text-center">
-            <span class="text-4xl font-extrabold drop-shadow-sm-lightblue text-0078AA">TROPHY</span>
-
-            <div class="relative mt-12 drop-shadow-md overflow-hidden block group ">
-                <div class="bg-0078AA p-5 text-white flex flex-col">
+        <section class="px-6 py-12 w-full h-fit text-center md:px-20">
+            <span class="text-4xl font-extrabold drop-shadow-sm-lightblue text-0078AA md:text-6xl">TROPHY</span>
+            <div class="lg:flex gap-5">
+            <div class="lg:basis-1/3 relative h-full mt-12 drop-shadow-md overflow-hidden block group">
+                <div class="lg:h-full bg-0078AA p-5 lg:p-4 md:p-10 text-white flex flex-col">
                     <div
                         class="py-4 rounded-full bg-F2DF3A w-12 h-12 flex justify-center items-center text-3xl font-bold">
                         3</div>
-                    <img class="py-4 self-center" src="./assets/trophy-ac.png" alt="">
-                    <span class="pt-4 text-4xl font-bold">ACADEMY CHAMPIONS</span>
+                    <img class="lg:h-80 self-center" src="./assets/trophy-ac.png" alt="">
+                    <span class="pt-4 text-4xl font-bold md:text-5xl lg:text-3xl">ACADEMY CHAMPIONS</span>
                 </div>
                 <div id="trophy-year"
-                    class="h-full justify-center font-bold flex flex-col gap-3 text-white text-2xl absolute group-hover:-translate-y-full group-active:-translate-y-full transition-all ease-in-out duration-500 bg-gradient-to-t from-black w-full">
+                    class="h-full justify-center font-bold flex flex-col gap-3 text-white text-2xl md:text-3xl absolute group-hover:-translate-y-full group-active:-translate-y-full transition-all ease-in-out duration-500 bg-gradient-to-t from-black w-full">
                     <div>2018</div>
                     <div>2020</div>
                     <div>2023</div>
                 </div>
             </div>
 
-            <div class="relative mt-12 drop-shadow-md overflow-hidden block group ">
-                <div class="bg-0078AA p-5 text-white flex flex-col">
+            <div class="lg:basis-1/3 relative h-full mt-12 drop-shadow-md overflow-hidden block group ">
+                <div class="lg:h-full bg-0078AA p-5 lg:p-4 md:p-10 text-white flex flex-col">
                     <div
                         class="py-4 rounded-full bg-F2DF3A w-12 h-12 flex justify-center items-center text-3xl font-bold">
                         5</div>
-                    <img class="py-4 self-center" src="./assets/trophy-asc.png" alt="">
-                    <span class="pt-4 text-4xl font-bold">ACADEMY SUPER CUP</span>
+                    <img class="lg:h-80 self-center" src="./assets/trophy-asc.png" alt="">
+                    <span class="pt-4 text-4xl font-bold  md:text-5xl lg:text-3xl">ACADEMY SUPER CUP</span>
                 </div>
                 <div id="trophy-year"
-                    class="h-full justify-center font-bold flex flex-col gap-3 text-white text-2xl absolute group-hover:-translate-y-full group-active:-translate-y-full transition-all ease-in-out duration-500 bg-gradient-to-t from-black w-full">
+                    class="h-full justify-center font-bold flex flex-col gap-3 text-white text-2xl md:text-3xl absolute group-hover:-translate-y-full group-active:-translate-y-full transition-all ease-in-out duration-500 bg-gradient-to-t from-black w-full">
                     <div>2009</div>
                     <div>2013</div>
                     <div>2018</div>
@@ -165,17 +164,16 @@
                 </div>
             </div>
 
-
-            <div class="relative mt-12 drop-shadow-md overflow-hidden block group ">
-                <div class="bg-0078AA p-5 text-white flex flex-col">
+            <div class="lg:basis-1/3 relative h-full mt-12 drop-shadow-md overflow-hidden block group ">
+                <div class="lg:h-full bg-0078AA p-5 lg:p-4 md:p-10 text-white flex flex-col">
                     <div
                         class="py-4 rounded-full bg-F2DF3A w-12 h-12 flex justify-center items-center text-3xl font-bold">
                         9</div>
-                    <img class="py-4 self-center" src="./assets/trophy-loa.png" alt="">
-                    <span class="pt-4 text-4xl font-bold">LEAUGE OF ACADEMY</span>
+                    <img class="lg:h-80 self-center" src="./assets/trophy-loa.png" alt="">
+                    <span class="pt-4 text-4xl font-bold  md:text-5xl lg:text-3xl">LEAUGE OF ACADEMY</span>
                 </div>
                 <div id="trophy-year"
-                    class="h-full justify-center font-bold flex flex-col gap-3 text-white text-2xl absolute group-hover:-translate-y-full group-active:-translate-y-full transition-all ease-in-out duration-500 bg-gradient-to-t from-black w-full">
+                    class="h-full justify-center font-bold flex flex-col gap-3 text-white text-2xl md:text-3xl absolute group-hover:-translate-y-full group-active:-translate-y-full transition-all ease-in-out duration-500 bg-gradient-to-t from-black w-full">
                     <div>2009</div>
                     <div>2010</div>
                     <div>2012</div>
@@ -187,22 +185,23 @@
                     <div>2023</div>
                 </div>
             </div>
+        </div>
 
         </section>
 
         <!-- program -->
-        <section class="px-6 py-12 w-full h-fit">
+        <section class="px-6 md:px-12 lg:px-20 py-12 w-full h-fit">
             <div class=" text-center">
-                <span class="text-4xl font-extrabold drop-shadow-sm-lightblue text-0078AA">OUR PROGRAM</span>
+                <span class="text-4xl font-extrabold drop-shadow-sm-lightblue text-0078AA md:text-6xl">OUR PROGRAM</span>
             </div>
-            <p class="pt-6 text-justify text-xl indent-8">A Football Academy offers diverse training programs for soccer
+            <p class="pt-6 text-justify text-xl indent-8 md:text-2xl lg:text-3xl">A Football Academy offers diverse training programs for soccer
                 players, including technical drills (e.g., dribbling, passing), tactical sessions, physical
                 conditioning, match play, tactical understanding, career development guidance, and participation in
                 tournaments. These programs cater to players of varying ages and skill levels, aiming to foster
                 comprehensive skill development.
             </p>
             <div class="text-end">
-                <button class="px-4 py-1.5 bg-0078AA text-xl font-bold drop-shadow-sm-lightblue text-white mt-5"><a
+                <button class="px-4 py-1.5 bg-0078AA text-xl md:text-2xl lg:text-3xl font-bold drop-shadow-sm-lightblue text-white mt-5"><a
                         href="./program.html">JOIN US!</a></button>
             </div>
         </section>
@@ -218,56 +217,56 @@
 
         <!-- top graduate -->
         <section class="pt-12 w-full h-screen bg-0078AA flex flex-col">
-            <div class="text-center w-full h-fit">
-                <span class="text-4xl font-extrabold drop-shadow-sm-lightblue text-white">TOP GRADUATE</span>
+            <div class="text-center w-full h-fit lg:mt-10">
+                <span class="text-4xl font-extrabold drop-shadow-sm-lightblue text-white md:text-6xl">TOP GRADUATE</span>
             </div>
-            <div class="w-full h-full flex flex-col">
+            <div class="w-full h-full flex flex-col lg:flex-row">
                 <div id="name-top-player" class="mt-4 w-full py-4">
                     <div id="odado" onclick="showImg()" onmouseover="showImg(this.id)" onmouseout="hideImg(this.id)"
-                        class="relative w-full text-center h-9 group mt-8">
-                        <span class="relative text-3xl font-bold text-0078AA z-10">ODADOO</span>
+                        class="relative w-full text-center h-9 group mt-8 text-3xl md:text-6xl md:h-16 md:mt-14">
+                        <span class="relative font-bold text-0078AA z-10">ODADOO</span>
                         <span
-                            class="absolute w-full left-0 text-3xl font-bold text-stroke text-transparent">ODADOO</span>
+                            class="absolute w-full left-0 font-bold text-stroke text-transparent">ODADOO</span>
                         <div
                             class="top-0 left-0 absolute w-3 h-full group-hover:w-full group-active:w-full transition-all ease-in-out duration-500 bg-white">
                         </div>
                     </div>
                     <div id="tessie" onclick="showImg()" onmouseover="showImg(this.id)" onmouseout="hideImg(this.id)"
-                        class="relative w-full h-9 text-center group mt-8">
-                        <span class="relative text-3xl font-bold text-0078AA z-10">TESSIE</span>
+                        class="relative w-full h-9 text-center group mt-8 text-3xl md:text-6xl md:h-16 md:mt-14">
+                        <span class="relative font-bold text-0078AA z-10">TESSIE</span>
                         <span
-                            class="absolute w-full left-0 text-3xl font-bold text-stroke text-transparent">TESSIE</span>
+                            class="absolute w-full left-0 font-bold text-stroke text-transparent">TESSIE</span>
                         <div
                             class="top-0 left-0 absolute w-3 h-full group-hover:w-full group-active:w-full transition-all ease-in-out duration-500 bg-white">
                         </div>
                     </div>
                     <div id="omama" onmouseover="showImg(this.id)" onmouseout="hideImg(this.id)"
-                        class="relative w-full h-9 text-center group mt-8">
-                        <span class="relative text-3xl font-bold text-0078AA z-10">OMAMA</span>
+                        class="relative w-full h-9 text-center group mt-8 text-3xl md:text-6xl md:h-16 md:mt-14">
+                        <span class="relative font-bold text-0078AA z-10">OMAMA</span>
                         <span
-                            class="absolute w-full left-0 text-3xl font-bold text-stroke text-transparent">OMAMA</span>
+                            class="absolute w-full left-0 font-bold text-stroke text-transparent">OMAMA</span>
                         <div
                             class="top-0 left-0 absolute w-3 h-full group-hover:w-full group-active:w-full transition-all ease-in-out duration-500 bg-white">
                         </div>
                     </div>
-                    <div class="text-center w-full h-fit bg-0078AA mt-8">
-                        <button class="px-4 py-1.5 bg-white text-xl drop-shadow-sm-lightblue font-bold text-0078AA"><a
+                    <div class="text-center w-full h-fit bg-0078AA mt-8 md:mt-14">
+                        <button class="px-4 py-1.5 bg-white text-xl drop-shadow-sm-lightblue font-bold text-0078AA md:text-3xl"><a
                                 href="./graduate.html">SEE ALL</a></button>
                     </div>
                 </div>
                 <div class="w-full h-full ">
                     <div id="img-top-player"
                         class="relative w-full h-full flex justify-center items-end overflow-hidden">
-                        <img id="odado" class=" w-80 absolute hidden" src="./assets/odado.png" alt="">
-                        <img id="tessie" class="w-80 absolute hidden" src="./assets/tessie.png" alt="">
-                        <img id="omama" class="w-80 absolute hidden" src="./assets/omama.png" alt="">
+                        <img id="odado" class="w-80 absolute hidden md:w-96 lg:w-2/3" src="./assets/odado.png" alt="">
+                        <img id="tessie" class="w-80 absolute hidden md:w-96 lg:w-2/3" src="./assets/tessie.png" alt="">
+                        <img id="omama" class="w-80 absolute hidden md:w-96 lg:w-2/3" src="./assets/omama.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class="w-full h-fit bg-black flex flex-col items-center pt-8 text-l text-white">
-            <div class="flex gap-3">
+        <footer class="w-full h-fit bg-black flex flex-col lg:flex-row lg:justify-between items-center p-8 text-l text-white md:text-2xl">
+            <div class="flex gap-3 items-center">
                 <a class="h-12 w-12" href="#index.html">
                     <svg width="48" height="48" viewBox="0 0 107 105" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="57.9131" y="0.714264" width="48.3466" height="22.1773" fill="white" />
@@ -277,7 +276,7 @@
                         <rect x="29.0826" y="0.714264" width="22.1773" height="103.79" fill="white" />
                     </svg>
                 </a>
-                <div><span class="text-2xl font-bold">FITE</span> <br> FOOTBALL ACADEMY</div>
+                <div><span class="text-2xl font-bold md:text-4xl">FITE</span> <br> FOOTBALL ACADEMY</div>
             </div>
             <div class="mt-6">
                 <a href="./contact.html">CONTACT & INFORMATION</a>
