@@ -24,7 +24,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-      'intro': "url('../assets/bg-home.png')"
+      'intro': "url('../assets/bg-home.png')",
+      'kedua': "url('../assets/bg-2.png')"
       },
       backgroundColor: {
         '0078AA' : "#0078AA",
