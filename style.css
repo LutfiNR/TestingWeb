@@ -53,6 +53,7 @@ nav .navbar li {
 }
 
 .burger-nav {
+    display:none;
     width: 100%;
     position: absolute;
     z-index: 10;
@@ -67,10 +68,6 @@ nav .navbar li {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.hide {
-    display: none;
 }
 
 nav .navbar li a,
@@ -88,18 +85,18 @@ nav .navbar li a:hover,
     color: var(--dark-color);
 }
 
-.slide-down {
-    animation-name: slideDown;
+.slide-left {
+    animation-name: slideLeft;
     animation-duration: 0.7s;
 }
 
-@keyframes slideDown {
+@keyframes slideLeft {
     from {
-        height: 0;
+        width: 0;
     }
 
     to {
-        height: fit-content;
+        width: 100%;
     }
 }
 
