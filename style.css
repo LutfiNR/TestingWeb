@@ -55,9 +55,6 @@ nav .navbar li {
 .burger-nav {
     display:none;
     width: 100%;
-    position: absolute;
-    z-index: 1;
-    right: 0;
     background-color: var(--light-color);
 }
 
@@ -85,18 +82,18 @@ nav .navbar li a:hover,
     color: var(--dark-color);
 }
 
-.slide-left {
-    animation-name: slideLeft;
+.slide-down {
+    animation-name: slideDown;
     animation-duration: 0.7s;
 }
 
-@keyframes slideLeft {
+@keyframes slideDown {
     from {
-        width: 0;
+        height: 0;
     }
 
     to {
-        width: 100%;
+        height: 256px;
     }
 }
 
